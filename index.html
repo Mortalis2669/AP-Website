@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3efe5" />
+  <title>MORTALIS — Mathematics, in the margins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Mortalis home">
+    HOME<span>.</span>
+</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#notebook">Notebook</a><a href="#mathematics">Mathematics</a><a href="#research">Research</a><a href="#about">About</a>
+    </nav>
+    <a class="github-link" href="https://github.com/Mortalis2669" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-meta"><span class="scribble">A personal Site for my workings, projects, and organization of me thoughts</span><span class="meta-right">PURE MATHEMATICS / NUMBER THEORY</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow">THE PERSONAL PLATFORM OF ADITYA PANDEY</p>
+        <h1>Exact Sciences<br>in the <em>margins.</em></h1>
+        <p class="hero-sub">A place for questions, proofs, unfinished thoughts<br class="desktop-only"> and the beautiful oddities hiding in STEM fields.</p>
+        <a class="text-link" href="#notebook">Wander through the notes <span>↓</span></a>
+      </div>
+      
+      <div class="hero-doodle doodle-two" aria-hidden="true">∞</div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="handwritten">Papers, materials, and lectures↘</span></div>
+    </section>
+
+    <section class="prime-section section-wrap" id="prime-lattice">
+      <div class="section-kicker"><span>01 / PLAY WITH NUMBERS</span><span class="handwritten">a tiny mathematical playground</span></div>
+      <div class="prime-heading">
+        <div><h2>The prime<br><em>constellation.</em></h2><p>A little grid. A lot of structure.<br>Change the range and see the primes light up.</p></div>
+        <div class="prime-controls">
+          <label for="grid-size">GRID SIZE <output id="grid-size-value">20 × 20</output></label>
+          <input id="grid-size" type="range" min="8" max="30" value="20" />
+          <div class="legend"><span><i class="dot prime-dot"></i> prime</span><span><i class="dot composite-dot"></i> composite</span><span><i class="dot unit-dot"></i> 1</span></div>
+        </div>
+      </div>
+      <div class="lattice-paper">
+        <div class="lattice-topline"><span>FIG. 01 — NATURAL NUMBERS</span><span id="prime-count">PRIMES: —</span></div>
+        <div id="prime-grid" class="prime-grid" aria-label="Interactive grid of natural numbers"></div>
+        <div class="lattice-footer"><span id="selected-number">SELECT A NUMBER</span><span id="selected-note">tap a cell to inspect it ↗</span></div>
+      </div>
+      <p class="tiny-note">Not a proof. Just a pattern asking to be investigated.</p>
+    </section>
+
+    <section class="manifesto section-wrap" id="notebook">
+      <div class="manifesto-mark">“</div>
+      <p class="manifesto-line">The best ideas rarely arrive<br>fully <em>formatted.</em></p>
+      <p class="manifesto-aside handwritten">they start in the margins.</p>
+    </section>
+
+    <section class="content-section section-wrap" id="mathematics">
+      <div class="section-kicker"><span>02 / THE NOTEBOOK</span><span class="handwritten">chapters waiting to happen</span></div>
+      <div class="section-title-row"><h2>Rooms for<br><em>curiosity.</em></h2><p>Choose a corridor. Leave a trail.<br>More pages will appear here over time.</p></div>
+      <div class="topic-list">
+        <a class="topic-row" href="#topic-number-theory"><span class="topic-index">A.</span><span class="topic-name">Number theory</span><span class="topic-desc">Primes, patterns &amp; proofs</span><span class="topic-arrow">↗</span></a>
+        <a class="topic-row" href="#topic-analysis"><span class="topic-index">B.</span><span class="topic-name">Real &amp; complex analysis</span><span class="topic-desc">Limits, functions &amp; the infinite</span><span class="topic-arrow">↗</span></a>
+        <a class="topic-row" href="#topic-algebra"><span class="topic-index">C.</span><span class="topic-name">Abstract algebra</span><span class="topic-desc">Groups, rings &amp; fields</span><span class="topic-arrow">↗</span></a>
+        <a class="topic-row" href="#topic-topology"><span class="topic-index">D.</span><span class="topic-name">Topology &amp; geometry</span><span class="topic-desc">Shape, space &amp; continuity</span><span class="topic-arrow">↗</span></a>
+        <a class="topic-row" href="#topic-misc"><span class="topic-index">E.</span><span class="topic-name">Loose pages</span><span class="topic-desc">Crossovers, questions &amp; curiosities</span><span class="topic-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="research-section section-wrap" id="research">
+      <div class="section-kicker"><span>03 / WORK IN PROGRESS</span><span class="handwritten">the research desk</span></div>
+      <div class="research-grid">
+        <div><h2>Research<br><em>Private & Uncompleated.</em></h2><p class="research-intro">A home for ongoing work, preprints, notes and mathematical questions worth sitting with.</p><span class="under-construction">1. Different proof of Fermat-Euler Theorem.</span></div>
+        <div class="research-card">
+          <span class="card-label">CURRENTLY OPEN</span>
+          <div class="empty-symbol">∑</div>
+          <p class="handwritten">A blank page is a good place to begin.</p>
+          <span class="card-foot">PROJECTS / PAPERS / PREPRINTS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources-section section-wrap" id="resources">
+      <div class="section-kicker"><span>04 / THE TOOLBOX</span><span class="handwritten">useful things, collected</span></div>
+      <h2>For the curious<br><em>and the stubborn.</em></h2>
+      <div class="resource-grid">
+        <article class="resource-card"><span>01 — LEARN</span><h3>Study materials</h3><p>A shelf for lecture notes, problem sets and explanations.</p><span class="resource-placeholder">EMPTY SHELF ↗</span></article>
+        <article class="resource-card"><span>02 — READ</span><h3>Sources &amp; references</h3><p>Books, papers, articles and links worth keeping close.</p><span class="resource-placeholder">EMPTY SHELF ↗</span></article>
+        <article class="resource-card"><span>03 — BUILD</span><h3>Code &amp; experiments</h3><p>Small computational explorations and reproducible work.</p><a class="resource-placeholder" href="https://github.com/" target="_blank" rel="noreferrer">GITHUB REPOSITORY ↗</a></article>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="section-kicker"><span>05 / THE PERSON BEHIND THE PAGES</span><span class="handwritten">a note about the author</span></div>
+      <div class="about-layout"><h2>Hi, I'm<br><em>Aditya.</em></h2><div><p class="about-name">ADITYA PANDEY <span> <a class="github-link" href="https://mortalis2669.github.io/Mortalis-website/" target="_blank" rel="noreferrer">MORTALIS <span>↗</span></a></span></p><p class="about-placeholder">For any queries, reach out to me at adityapandey2669@gmail.com. It would also be worth noting for visitors and readers that papers and idea within this site are private and unpublished yet, they may include WRONG IDEAS!</p><span class="handwritten">*nashik,*shimla; age 17.✎</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-mark" href="#top">APP Studio's<span>✳</span></a>
+    <p>Made of questions, ink &amp; infinity.</p>
+    <a href="#top">BACK TO THE TOP ↑</a>
+    <small>© <span id="year"></span> ADITYA PANDEY</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
